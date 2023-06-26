@@ -7,5 +7,7 @@ Contains content of:
  - cooler.yml
  - pairix.yml
  - pairtools.yml
+ - pore_c.yml
+ - qc.yml
  - whatshap.yml
  - spoc.yml

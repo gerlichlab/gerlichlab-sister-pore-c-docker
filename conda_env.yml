@@ -22,5 +22,13 @@ dependencies:
   # - tabix
   #name: whatshap
   - whatshap ==1.0
+  # name: pore_c.yml
+  - pore-c==0.4.0
+  - aws-sdk-cpp==1.8.186
+  # name: qc.yml (+pore_c.yml)
+  - pandas
+  - matplotlib
+  - seaborn 
+
   - pip:
     - git+https://github.com/gerlichlab/spoc
