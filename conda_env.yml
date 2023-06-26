@@ -28,7 +28,11 @@ dependencies:
   # name: qc.yml (+pore_c.yml)
   - pandas
   - matplotlib
-  - seaborn 
-
+  - seaborn
+  # name: bwa.yml
+  - bwa==0.7.17
+  - samtools==1.9
+  - pysam==0.15.3
+  - dask
   - pip:
     - git+https://github.com/gerlichlab/spoc
