@@ -1,0 +1,26 @@
+name: sister-pore-c_base
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  # name: assign_pairs
+  - python==3.8
+  - pandas
+  - pyarrow
+  - pairtools==0.3.0
+  # name: bcf_tools
+  - bcftools==1.9
+  - tabix==0.2.6
+  # name: cooler
+  - cooler==0.8.11
+  # name: pairix
+  - pairix
+  # name: pairtools
+  - pairtools==0.3.0
+  - coreutils
+  # - tabix
+  #name: whatshap
+  - whatshap ==1.0
+  - pip:
+    - git+https://github.com/gerlichlab/spoc
