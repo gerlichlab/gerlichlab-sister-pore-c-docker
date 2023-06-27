@@ -17,7 +17,7 @@ dependencies:
   # name: pairix
   - pairix
   # name: pairtools
-  - pairtools==0.3.0
+  # - pairtools==0.3.0
   - coreutils
   # - tabix
   #name: whatshap
@@ -33,6 +33,6 @@ dependencies:
   - bwa
   - samtools
   - pysam
-  - dask
+  - dask==2.30.0
   - pip:
     - git+https://github.com/gerlichlab/spoc
