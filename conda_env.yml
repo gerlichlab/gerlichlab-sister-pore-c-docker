@@ -30,9 +30,9 @@ dependencies:
   - matplotlib
   - seaborn
   # name: bwa.yml
-  - bwa==0.7.17
-  - samtools==1.9
-  - pysam==0.15.3
+  - bwa
+  - samtools
+  - pysam
   - dask
   - pip:
     - git+https://github.com/gerlichlab/spoc

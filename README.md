@@ -11,3 +11,4 @@ Contains content of:
  - qc.yml
  - whatshap.yml
  - spoc.yml
+ - bwa.yml
