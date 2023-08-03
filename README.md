@@ -12,3 +12,5 @@ Contains content of:
  - whatshap.yml
  - spoc.yml
  - bwa.yml
+
+Branche for pore_c.yml only.

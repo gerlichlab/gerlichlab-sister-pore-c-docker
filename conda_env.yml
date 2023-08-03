@@ -5,15 +5,15 @@ channels:
   - defaults
 dependencies:
   # name: assign_pairs
-  - python==3.8
+  - python==3.9
   - pandas
   - pyarrow
-  - pairtools==0.3.0
+  - pairtools==1.0.2
   # name: bcf_tools
   - bcftools==1.9
   - tabix==0.2.6
   # name: cooler
-  - cooler==0.8.11
+  - cooler==0.9.2
   # name: pairix
   - pairix
   # name: pairtools
@@ -33,6 +33,7 @@ dependencies:
   - bwa
   - samtools
   - pysam
-  - dask==2.30.0
+  - dask
+  - pip
   - pip:
     - git+https://github.com/gerlichlab/spoc
