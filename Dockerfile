@@ -10,13 +10,13 @@ RUN apt-get --allow-releaseinfo-change update &&\
     apt-get clean
 
 # Add yml file for conda environment
-ADD envs/pore_c.yml /temp/install/
+ADD envs/bwa.yml /temp/install/
 
 # install packages
 RUN conda update -n base -c defaults conda &&\
     conda install -n base conda-libmamba-solver &&\
     conda config --set solver libmamba &&\
-    conda env update -n base --f /temp/install/pore_c.yml &&\
+    conda env update -n base --f /temp/install/bwa.yml &&\
     conda list > software_versions_conda.txt
 
 # clean up install
