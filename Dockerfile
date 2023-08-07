@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:23.5.2-0
+FROM condaforge/mambaforge:latest
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG C.UTF-8  
 ENV LC_ALL C.UTF-8
@@ -13,11 +13,8 @@ RUN apt-get --allow-releaseinfo-change update &&\
 ADD envs/bwa.yml /temp/install/
 
 # install packages
-RUN conda update -n base -c defaults conda &&\
-    conda install -n base conda-libmamba-solver &&\
-    conda config --set solver libmamba &&\
-    conda env update -n base --f /temp/install/bwa.yml &&\
-    conda list > software_versions_conda.txt
+RUN mamba env update -n base --f /temp/install/bwa.yml &&\
+    mamba list > software_versions_conda.txt
 
 # clean up install
 
