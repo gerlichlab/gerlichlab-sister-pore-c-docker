@@ -10,7 +10,7 @@ RUN apt-get --allow-releaseinfo-change update &&\
     apt-get clean
 
 # Add yml file for conda environment
-ADD envs/bwa.yml /temp/install/
+ADD envs/spoc.yml /temp/install/
 
 # install packages
 RUN mamba env update -n base --f /temp/install/spoc.yml &&\
