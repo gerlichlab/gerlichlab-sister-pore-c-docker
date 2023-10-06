@@ -13,7 +13,7 @@ RUN apt-get --allow-releaseinfo-change update &&\
 ADD envs/bwa.yml /temp/install/
 
 # install packages
-RUN mamba env update -n base --f /temp/install/bwa.yml &&\
+RUN mamba env update -n base --f /temp/install/spoc.yml &&\
     mamba list > software_versions_conda.txt
 
 # clean up install
