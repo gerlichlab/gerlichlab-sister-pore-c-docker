@@ -3,6 +3,7 @@ channels:
 - bioconda
 - defaults
 dependencies:
-- python==3.8
+- python==3.10
 - pip:
   - git+https://github.com/gerlichlab/spoc
+  - pyranges
