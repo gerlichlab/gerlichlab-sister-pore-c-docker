@@ -4,6 +4,5 @@ channels:
 - defaults
 dependencies:
 - python==3.10.12
-- pyranges
 - pip:
   - git+https://github.com/gerlichlab/spoc
