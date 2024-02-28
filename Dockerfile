@@ -10,10 +10,10 @@ RUN apt-get --allow-releaseinfo-change update &&\
     apt-get clean
 
 # Add yml file for conda environment
-ADD envs/qc.yml /temp/install/
+ADD envs/pore_c.yml /temp/install/
 
 # install packages
-RUN mamba env update -n base --f /temp/install/qc.yml &&\
+RUN mamba env update -n base --f /temp/install/pore_c.yml &&\
     mamba list > software_versions_conda.txt
 
 # clean up install
