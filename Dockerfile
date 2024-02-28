@@ -23,4 +23,5 @@ RUN conda update -n base -c defaults conda &&\
 
 RUN rm -rf /temp/install
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
+SHELL ["conda", "run", "-n", "base", "/bin/bash", "-c"]
